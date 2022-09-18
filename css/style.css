@@ -30,11 +30,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    
 }
 
 .page-header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .wrapper-nav {
@@ -205,6 +207,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
     justify-content: space-between;
 }
 
+.actions img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .team {
     background: var(--light-bg);
 }
@@ -226,6 +234,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .team li {
     width: 270px;
+    background: var(--page-white-color);   
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team .subtitle {
@@ -239,6 +250,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .team p {
     margin-top: 10px;
+    margin-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.19;
     color: var(--page-light-color);
@@ -334,7 +347,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .portfolio-items h2{ 
@@ -346,14 +359,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
     letter-spacing: 0.06em;   
 } 
 
-.portfolio-items p {
-    margin-top: 4px;
-    
+.portfolio-items img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-items .wrapper {
+    padding: 20px 24px;
+    background: var(--page-white-color);
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-items p {    
     font-size: 16px;
     line-height: 1.88;   
     color: var(--page-light-color);
-}
-
-.portfolio-items li:not(:nth-last-child(-n + 3)) {
-    margin-bottom: 30px;
 }
